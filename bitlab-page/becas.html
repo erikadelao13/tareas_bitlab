@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./resources/css/header.css" />
+    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="stylesheet" href="./public/css/mystyles.css">
+    <script src="./public/js/app.js"></script>
+    <title>BITLAB - Digital Skills Academy</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:100,200,300,400,500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="header h-24 flex justify-between items-center object-center">
+        <img class='mx-20' src="./resources/Images/logo-bitlab.svg">
+        <ul class="mx-20 flex text-white font-md">
+            <div class="hover:underline">
+                <li class="mx-5 montse"><a href="">Cursos</a></li>
+            </div>
+            <div>
+                <li class="mx-5 montse"><a href="">Becas</a></li>
+            </div>
+            <div>
+                <li class="mx-5 montse"><a href="">Eventos</a></li>
+            </div>
+            <div>
+                <li class="mx-5 montse"><a href="">Aliados</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <section class="flex h-screen w-full justify-center">
+        <img src="./resources/Images/img_hero-everyone.jpg">
+        <img class='forEveryone' src='./resources/Images/For everyone.png'>
+        <p class='w-579 font-sans headerBecas text-white'>Nuestro objetivo como BitLab es inspirar y promover que más personas ingresen al mundo digital para obtener un mejor trabajo en el futuro.</p>
+    </section>
+    
+    <section class='container-fluid'>
+        <div class='flex'>
+            <div class='w-full mt-16 ml-48'>
+                <p class='text-4xl montse'>Tipos de becas</p>
+                <p class='font-sans mt-8'>Puedes aplicar a una beca en nuestra academia si cumples con alguno de los siguientes perfiles:</p>      
+            </div>
+            <div>
+                <img src='./resources/Images/img_becas.png'> 
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 800) {
+                $(".header").addClass("active");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+            $(".header").removeClass("active");
+            }
+        });          
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js"></script>
+</body>
+
+</html>

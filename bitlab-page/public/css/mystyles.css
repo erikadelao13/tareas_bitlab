@@ -1,0 +1,238 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.main-menu {
+  transition: .3s all ease;
+  height: 85px;
+}
+
+.main-menu.bg-transparent .logo-white {
+  display: block;
+}
+
+.main-menu .link-menu {
+  font-weight: 700;
+  border-bottom: 3px solid transparent;
+  height: 100%;
+  line-height: 6rem;
+  transition: .3s all ease;
+}
+.transition {
+  transition: .3s all ease;
+}
+@media screen and (max-width: 768px){
+  .home-hero .icon-svg {
+      max-width: 350px;
+      width: 100%;
+  }
+  .home-hero .icon-svg.svg-2 {
+      max-width: 250px;
+      width: 100%;
+  }
+  .home-hero .icon-svg.svg-3 {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+.interest {
+  overflow: hidden;
+}
+.interest .container-interest .img-container {
+  z-index: 100;
+  display: inline-table;
+}
+.interest .container-interest .img-container .content {
+  position: relative;
+  display: inline-block;
+}
+.interest .container-interest .img-container .content:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 80%;
+  background-color: transparent;
+  border: 1px solid purple;
+  vertical-align: middle;
+  right: -30px;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media (min-width: 992px){
+  .lg\:pin-l {
+    left: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1570px){
+  .interest .container-interest .interes-content {
+    justify-content: center;
+  }
+}
+
+.interest .container-interest .interes-content {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.interest .container-interest .interes-content .content {
+  max-width: 800px;
+}
+
+@media (min-width: 992px){
+  .lg\:ml-32 {
+    margin-left: 8rem !important;
+  }
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.interest .container-interest .interest-grid {
+  max-width: 800px;
+}
+
+.interest--card {
+  min-height: 100px;
+
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  transition: .3s all ease;
+  cursor: pointer;
+}
+
+.interest--card .card-body {
+  padding: 1.25rem 1rem;
+  transition: .3s all ease;
+}
+
+.interest--card .card-body > div {
+  height: 100%;
+}
+
+.interest--card p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.interest--card .card-arrow {
+  background-color: #00d2e5;
+  transition: .3s all ease;
+  opacity: 0;
+}
+
+.active::after {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #efefef;
+  content: ' ';
+  position: absolute;
+  bottom: -36px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.interest--card:hover .card-body {
+  background: #481ae7;
+  color: #ffffff;
+}
+
+.interest--card:hover .card-arrow {
+  opacity: 1;
+  border: 1px solid #00d2e5;
+}
+.interest--card:hover svg path{
+  fill: #fff;
+  stroke: #fff;
+}
+.interest--card:hover:before {
+  background: #481ae7;
+  color: #ffffff;
+  opacity: 1;
+  border: 1px solid #00d2e5;
+}
+
+.simple-card {
+  transition: all 0.2s ease;
+}
+.simple-card:hover {
+   transform: translateY(-3px);
+}
+
+.home-news {
+  position: relative;
+}
+.home-news .content-news {
+  overflow: hidden;
+}
+.home-news .content-news .row-content {
+  padding: 80px 0 140px;
+  background-image: url(https://www.bitlab.edu.sv/_nuxt/assets/images/home/bg-news.png);
+  background-repeat: no-repeat;
+  background-position-x: -200px;
+}
+.home-news .content-news .row-content .event-img {
+  padding-bottom: 0;
+}
+
+#nano-welcome{
+    height: 90vh;
+  }
+  .montse{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+
+  .montse-800{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+  }
+
+  .playfair{
+    font-family: 'Playfair Display', serif;
+
+  }
+  .forEveryone{
+    position: absolute;
+    top: 150px;
+    left: 90px;
+}
+.headerBecas{
+  position: absolute;
+  top: 270px;
+  left: 90px;
+}
+  .digitalskillacademy{
+    position: absolute;
+    top: 150px;
+    left: 90px;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    transition: all 1s ease-in-out;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    line-height: 40px;
+}
+
+.active {
+    background-color: white;
+}
